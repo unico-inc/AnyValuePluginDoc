@@ -7,9 +7,9 @@ URL
 
 # Summary
 
-`FAnyValue` is a type that can hold and get various types like `std::any` in C++.
+`FAnyValue` is a type that can hold and get values of various types, like `std::any` in C++.
 
-Various primitive types, string types, structures, UObjects, etc. are supported.
+Various primitive types, string types, USTRUCT structures, UObjects, etc. are supported.
 
 
 # How to use in Blueprint

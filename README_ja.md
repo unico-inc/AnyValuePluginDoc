@@ -7,9 +7,9 @@ URL
 
 # 概要
 
-`FAnyValue` はC++の `std::any` のように様々な型を保持・取得できる型です。
+`FAnyValue` はC++の `std::any` のように様々な型の値を保持・取得できる型です。
 
-各種Primitive型・文字列型・構造体・UObject等に対応しています。
+各種Primitive型・文字列型・USTRUCT構造体・UObject等に対応しています。
 
 
 # Blueprintでの使い方
