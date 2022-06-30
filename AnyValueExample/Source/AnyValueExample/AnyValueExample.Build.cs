@@ -13,7 +13,7 @@ public class AnyValueExample : ModuleRules
 			"CoreUObject",
 			"Engine",
 			"InputCore",
-			"AnyValue",		// 依存モジュールを追加.
+			"AnyValue",		// Add dependent modules
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
