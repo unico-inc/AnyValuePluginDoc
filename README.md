@@ -17,6 +17,8 @@ Install the plugin into the engine from the [Marketplace](https://www.unrealengi
 
 Make sure the plugin is activated from "Edit" > "Plugins".
 
+![Enabling plugins](./img/editor_plugin.png)
+
 # How to use in Blueprint
 
 ## Setting and getting structures
