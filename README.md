@@ -3,7 +3,7 @@
 
 ## UE4 Marketplace
 
-URL
+[Marketplace](https://www.unrealengine.com/marketplace/en-US/store)
 
 # Summary
 
@@ -11,6 +11,11 @@ URL
 
 Various primitive types, string types, USTRUCT structures, UObjects, etc. are supported.
 
+# Installing the plugin
+
+Install the plugin into the engine from the [Marketplace](https://www.unrealengine.com/marketplace/en-US/store).
+
+Make sure the plugin is activated from "Edit" > "Plugins".
 
 # How to use in Blueprint
 

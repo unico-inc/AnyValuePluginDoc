@@ -3,7 +3,7 @@
 
 ## UE4 Marketplace
 
-URL
+[マーケットプレイス](https://www.unrealengine.com/marketplace/ja/store)
 
 # 概要
 
@@ -11,6 +11,13 @@ URL
 
 各種Primitive型・文字列型・USTRUCT構造体・UObject等に対応しています。
 
+# プラグインのインストール
+
+[マーケットプレイス](https://www.unrealengine.com/marketplace/ja/store)からエンジンにインストールします。
+
+"編集" > "プラグイン" よりプラグインが有効化されていることを確認してください。
+
+![プラグインの有効化](./img/editor_plugin.png)
 
 # Blueprintでの使い方
 
