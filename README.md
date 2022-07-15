@@ -11,6 +11,8 @@
 
 Various primitive types, string types, USTRUCT structures, UObjects, etc. are supported.
 
+It can be used when you want to handle types loosely, such as passing data to a common widget or parameters for a simple script.
+
 # Installing the plugin
 
 Install the plugin into the engine from the [Marketplace](https://www.unrealengine.com/marketplace/en-US/store).
@@ -21,17 +23,64 @@ Make sure the plugin is activated from "Edit" > "Plugins".
 
 # How to use in Blueprint
 
-## Setting and getting structures
+## Basic usage
+
+1. Open a Blueprint asset.
+   
+2. Add a variable from VARIABLES in the My Blueprint tab and set the type to AnyValue.
+
+![tutorial_1](./img/tutorial_1.png)
+
+3. Once the blueprint is compiled, initial values for variables can be set from the Details tab.
+
+![tutorial_2](./img/tutorial_2.png)
+
+4. You can set and get values by calling the functions provided for each type.
+For details on how to set and get values for each type, see [here](#how-to-set-and-get-each-type).
+
+
+## How to set and get each type
+
+### Setting and getting structures
+
+- Get Struct from AnyValue
+- Set Struct in AnyValue
 
 ![Setting and getting structures](./img/bp5_1.png)
 
-## Setting and getting primitive and string types
+### Setting and getting primitive and string types
 
+- ToAnyValue (boolean)
+- GetBoolValue
+- ToAnyValue (byte)
+- GetByteValue
+- ToAnyValue (integer)
+- GetIntValue
+- ToAnyValue (Int64)
+- GetInt64Value
+- ToAnyValue (float)
+- GetFloatValue
+- ToAnyValue (String)
+- GetStringValue
+- ToAnyValue (Name)
+- GetNameValue
+- ToAnyValue (Text)
+- GetTextValue
+  
 ![Setting and getting primitive and string types](./img/bp5_2.png)
 
 ![Setting and getting primitive and string types](./img/bp5_3.png)
 
-## Setting and getting object-related types
+### Setting and getting object-related types
+
+- ToAnyValue (Object)
+- GetObjectFromAnyValue
+- ToAnyValue (SoftObjectReference)
+- GetSoftObjectReferenceFromAnyValue
+- ToAnyValue (Class)
+- GetClassFromAnyValue
+- ToAnyValue (SoftClassReference)
+- GetSoftClassReferenceFromAnyValue
 
 ![Setting and getting object-related types](./img/bp5_4.png)
 

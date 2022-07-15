@@ -11,6 +11,8 @@
 
 各種Primitive型・文字列型・USTRUCT構造体・UObject等に対応しています。
 
+共通Widgetへのデータの受け渡しや簡易スクリプトのパラメータ等、型をゆるく扱いたい場合に利用できます。
+
 # プラグインのインストール
 
 [マーケットプレイス](https://www.unrealengine.com/marketplace/ja/store)からエンジンにインストールします。
@@ -21,18 +23,65 @@
 
 # Blueprintでの使い方
 
-## 構造体の設定・取得
+## 基本的な使い方
+
+1. Blueprintアセットを開きます。
+   
+2. My BlueprintタブのVARIABLESより変数を追加し、型をAnyValueに設定します。
+
+![tutorial_1](./img/tutorial_1.png)
+
+3. 一度Blueprintをコンパイルすると、Detailsタブから変数の初期値を設定できます。
+
+![tutorial_2](./img/tutorial_2.png)
+
+4. それぞれの型ごとに用意された関数を使って、各種型の設定・取得ができます。
+   型毎の設定・取得方法は [こちら](#それぞれの型の設定取得方法)
+
+
+## それぞれの型の設定・取得方法
+
+### 構造体の設定・取得
+
+- Get Struct from AnyValue
+- Set Struct in AnyValue
 
 ![構造体の設定・取得](./img/bp5_1.png)
 
-## Primitive型・文字列型の設定・取得
+### Primitive型・文字列型の設定・取得
+
+- ToAnyValue (boolean)
+- GetBoolValue
+- ToAnyValue (byte)
+- GetByteValue
+- ToAnyValue (integer)
+- GetIntValue
+- ToAnyValue (Int64)
+- GetInt64Value
+- ToAnyValue (float)
+- GetFloatValue
+- ToAnyValue (String)
+- GetStringValue
+- ToAnyValue (Name)
+- GetNameValue
+- ToAnyValue (Text)
+- GetTextValue
 
 ![Primitive型・文字列型の設定・取得](./img/bp5_2.png)
 
 ![Primitive型・文字列型の設定・取得](./img/bp5_3.png)
 
-## Object関連型の設定・取得
+### Object関連型の設定・取得
 
+- ToAnyValue (Object)
+- GetObjectFromAnyValue
+- ToAnyValue (SoftObjectReference)
+- GetSoftObjectReferenceFromAnyValue
+- ToAnyValue (Class)
+- GetClassFromAnyValue
+- ToAnyValue (SoftClassReference)
+- GetSoftClassReferenceFromAnyValue
+  
 ![Object関連型の設定・取得](./img/bp5_4.png)
 
 ![Object関連型の設定・取得](./img/bp5_5.png)
